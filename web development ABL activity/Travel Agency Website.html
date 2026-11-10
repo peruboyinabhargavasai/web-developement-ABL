@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Portal</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f4f7;
+        }
+
+        header {
+            background: linear-gradient(to right, #0077b6, #00b4d8);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #023047;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: #ffb703;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #023047;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #219ebc, #8ecae6);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 270px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px #cccccc;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #0077b6;
+        }
+
+        .card p {
+            padding: 0 10px;
+            color: #555;
+        }
+
+        .price {
+            color: #e76f51;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card a {
+            display: inline-block;
+            background-color: #0077b6;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 15px;
+            border-radius: 5px;
+        }
+
+        .card a:hover {
+            background-color: #023047;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0077b6;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eeeeee;
+        }
+
+        .form-box {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #cccccc;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #023047;
+        }
+
+        footer {
+            background-color: #023047;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>TRAVEL WORLD</h1>
+    <p>Explore Beautiful Places Around the World</p>
+    <p>Your Journey Begins Here!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#packages">Packages</a>
+    <a href="#itinerary">Itinerary</a>
+    <a href="#contact">Inquiry</a>
+</nav>
+
+<section>
+    <div class="banner">
+        <h2 style="color:white;">Discover Your Dream Destination</h2>
+        <p>Enjoy amazing holidays with affordable travel packages.</p>
+        <p>Adventure | Nature | Beaches | Mountains</p>
+    </div>
+</section>
+
+<section id="destinations">
+    <h2>Popular Destinations</h2>
+
+    <div class="destinations">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600" alt="Taj Mahal">
+            <h3>Agra</h3>
+            <p>Visit the beautiful Taj Mahal and historical monuments.</p>
+            <p>Best for: History and Culture</p>
+            <a href="#packages">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0f8dce?w=600" alt="Goa Beach">
+            <h3>Goa</h3>
+            <p>Enjoy beautiful beaches and exciting activities.</p>
+            <p>Best for: Beach Holidays</p>
+            <a href="#packages">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1618781717320-5d2c1e2f3d4a?w=600" alt="Manali">
+            <h3>Manali</h3>
+            <p>Experience mountains, snow and peaceful nature.</p>
+            <p>Best for: Adventure</p>
+            <a href="#packages">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1609920658906-8223bd289001?w=600" alt="Kerala">
+            <h3>Kerala</h3>
+            <p>Explore green forests and beautiful backwaters.</p>
+            <p>Best for: Nature</p>
+            <a href="#packages">Explore</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="packages">
+    <h2>Holiday Packages</h2>
+
+    <div class="destinations">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600" alt="Goa Package">
+            <h3>Goa Holiday</h3>
+            <p>Duration: 3 Days / 2 Nights</p>
+            <p class="price">₹8,999</p>
+            <p>Hotel, breakfast and sightseeing included.</p>
+            <a href="#contact">Book Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600" alt="Manali Package">
+            <h3>Manali Trip</h3>
+            <p>Duration: 5 Days / 4 Nights</p>
+            <p class="price">₹14,999</p>
+            <p>Hotel, transport and mountain sightseeing.</p>
+            <a href="#contact">Book Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1609920658906-8223bd289001?w=600" alt="Kerala Package">
+            <h3>Kerala Tour</h3>
+            <p>Duration: 4 Days / 3 Nights</p>
+            <p class="price">₹12,499</p>
+            <p>Houseboat experience and nature tour.</p>
+            <a href="#contact">Book Now</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="itinerary">
+    <h2>Trip Itinerary</h2>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Destination</th>
+            <th>Activities</th>
+        </tr>
+
+        <tr>
+            <td>Day 1</td>
+            <td>Goa</td>
+            <td>Hotel Check-in and Beach Visit</td>
+        </tr>
+
+        <tr>
+            <td>Day 2</td>
+            <td>Goa</td>
+            <td>Water Sports and Sightseeing</td>
+        </tr>
+
+        <tr>
+            <td>Day 3</td>
+            <td>Goa</td>
+            <td>Shopping and Departure</td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact">
+    <h2>Travel Inquiry Form</h2>
+
+    <div class="form-box">
+
+        <form action="#" method="post">
+
+            <label>Full Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" placeholder="Enter phone number" required>
+
+            <label>Select Destination:</label>
+            <select name="destination">
+                <option>Goa</option>
+                <option>Manali</option>
+                <option>Kerala</option>
+                <option>Agra</option>
+            </select>
+
+            <label>Travel Date:</label>
+            <input type="date" name="date">
+
+            <label>Number of Travelers:</label>
+            <input type="number" name="travelers" min="1" placeholder="Enter travelers">
+
+            <label>Travel Package:</label>
+            <select name="package">
+                <option>Goa Holiday</option>
+                <option>Manali Trip</option>
+                <option>Kerala Tour</option>
+            </select>
+
+            <label>Additional Requirements:</label>
+            <textarea name="message" rows="4" placeholder="Enter your requirements"></textarea>
+
+            <input type="submit" value="Submit Inquiry">
+
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    <h3>TRAVEL WORLD</h3>
+    <p>Explore More | Travel More | Enjoy More</p>
+    <p>Email: travelworld@gmail.com</p>
+    <p>© 2026 Travel World</p>
+</footer>
+
+</body>
+</html>

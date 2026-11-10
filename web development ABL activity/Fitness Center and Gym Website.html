@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Power Fitness Gym</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(to right, #000000, #434343);
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #ff4500;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #ff4500;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff4500;
+            font-size: 30px;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #ff4500, #ff8c00);
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .banner h2 {
+            color: white;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #222;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px #000;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #ff4500;
+        }
+
+        .card p {
+            color: #ddd;
+        }
+
+        .price {
+            font-size: 25px;
+            color: #ff8c00;
+            font-weight: bold;
+        }
+
+        .card a {
+            display: inline-block;
+            background-color: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: white;
+            color: #ff4500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #222;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff4500;
+        }
+
+        tr:hover {
+            background-color: #333;
+        }
+
+        .facilities {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .facilities li {
+            padding: 10px;
+        }
+
+        .form-box {
+            background-color: #222;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff8c00;
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>POWER FITNESS</h1>
+    <p>Build Your Strength | Improve Your Fitness</p>
+    <p>Welcome to the Best Fitness Center</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#membership">Membership</a>
+    <a href="#classes">Classes</a>
+    <a href="#register">Join Now</a>
+</nav>
+
+<section>
+    <div class="banner">
+        <h2>YOUR FITNESS JOURNEY STARTS HERE!</h2>
+        <p>Train Hard. Stay Strong. Be Healthy.</p>
+        <p>Modern Equipment | Expert Trainers | Best Facilities</p>
+    </div>
+</section>
+
+<section id="programs">
+    <h2>Workout Programs</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600" alt="Strength Training">
+            <h3>Strength Training</h3>
+            <p>Improve strength and fitness with weight training.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600" alt="Cardio">
+            <h3>Cardio Training</h3>
+            <p>Improve endurance with cardio exercises.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600" alt="Yoga">
+            <h3>Yoga</h3>
+            <p>Improve flexibility and relaxation.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="trainers">
+    <h2>Our Trainers</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=600" alt="Trainer">
+            <h3>Rahul</h3>
+            <p>Strength Training Coach</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600" alt="Trainer">
+            <h3>Priya</h3>
+            <p>Fitness and Yoga Trainer</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600" alt="Trainer">
+            <h3>Arjun</h3>
+            <p>Cardio Trainer</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="membership">
+    <h2>Membership Plans</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Basic Plan</h3>
+            <p class="price">₹999</p>
+            <p>1 Month Membership</p>
+            <p>Gym Access</p>
+            <p>Basic Equipment</p>
+            <a href="#register">Join Now</a>
+        </div>
+
+        <div class="card">
+            <h3>Standard Plan</h3>
+            <p class="price">₹2,499</p>
+            <p>3 Months Membership</p>
+            <p>Gym Access</p>
+            <p>Group Classes</p>
+            <a href="#register">Join Now</a>
+        </div>
+
+        <div class="card">
+            <h3>Premium Plan</h3>
+            <p class="price">₹7,999</p>
+            <p>12 Months Membership</p>
+            <p>Gym Access</p>
+            <p>Personal Trainer</p>
+            <a href="#register">Join Now</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="facilities">
+    <h2>Fitness Facilities</h2>
+
+    <div class="facilities">
+        <ul>
+            <li>Modern Gym Equipment</li>
+            <li>Weight Training Area</li>
+            <li>Cardio Machines</li>
+            <li>Yoga and Meditation Room</li>
+            <li>Locker Rooms</li>
+            <li>Personal Training Services</li>
+            <li>Clean Drinking Water</li>
+            <li>Air Conditioned Workout Area</li>
+        </ul>
+    </div>
+</section>
+
+<section id="classes">
+    <h2>Class Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Class</th>
+            <th>Time</th>
+            <th>Trainer</th>
+            <th>Days</th>
+        </tr>
+
+        <tr>
+            <td>Yoga</td>
+            <td>6:00 AM</td>
+            <td>Priya</td>
+            <td>Mon - Fri</td>
+        </tr>
+
+        <tr>
+            <td>Cardio</td>
+            <td>7:00 AM</td>
+            <td>Arjun</td>
+            <td>Mon - Sat</td>
+        </tr>
+
+        <tr>
+            <td>Strength Training</td>
+            <td>5:00 PM</td>
+            <td>Rahul</td>
+            <td>Mon - Sat</td>
+        </tr>
+
+        <tr>
+            <td>Fitness Class</td>
+            <td>6:00 PM</td>
+            <td>Priya</td>
+            <td>Tue - Sun</td>
+        </tr>
+    </table>
+</section>
+
+<section id="register">
+    <h2>Gym Registration Form</h2>
+
+    <div class="form-box">
+
+        <form action="#" method="post">
+
+            <label>Full Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" placeholder="Enter phone number" required>
+
+            <label>Age:</label>
+            <input type="number" name="age" min="13" placeholder="Enter age" required>
+
+            <label>Gender:</label>
+            <select name="gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label>Select Membership:</label>
+            <select name="membership">
+                <option>Basic Plan</option>
+                <option>Standard Plan</option>
+                <option>Premium Plan</option>
+            </select>
+
+            <label>Fitness Goal:</label>
+            <select name="goal">
+                <option>General Fitness</option>
+                <option>Strength and Fitness</option>
+                <option>Flexibility</option>
+                <option>Sports Fitness</option>
+            </select>
+
+            <label>Additional Information:</label>
+            <textarea name="message" rows="4" placeholder="Enter your message"></textarea>
+
+            <input type="submit" value="Register Now">
+
+        </form>
+
+    </div>S
+</section>
+
+<footer>
+    <h3>POWER FITNESS GYM</h3>
+    <p>Stay Fit | Stay Strong | Stay Healthy</p>
+    <p>Email: powerfitness@gmail.com</p>
+    <p>© 2026 Power Fitness</p>
+</footer>
+
+</body>
+</html>

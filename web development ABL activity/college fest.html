@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Fest 2026</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f4f8;
+        }
+
+        header {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            color: #ffcc00;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #243b55;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #ff512f, #dd2476);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .events {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px #cccccc;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #dd2476;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #243b55;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eeeeee;
+        }
+
+        .rules {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .form-box {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #243b55;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #dd2476;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ZENITH 2026</h1>
+    <p>Annual College Festival</p>
+    <p>December 24 - 27 | Welcome to Our College Fest</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#technical">Technical</a>
+    <a href="#cultural">Cultural</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#register">Register</a>
+</nav>
+
+<section id="home">
+    <div class="banner">
+        <h2 style="color:white;">Celebrate Talent and Creativity!</h2>
+        <p>Join us for exciting competitions, workshops and entertainment.</p>
+    </div>
+</section>
+
+<section id="technical">
+    <h2>Technical Events</h2>
+
+    <div class="events">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Robotics">
+            <h3>Robotics</h3>
+            <p>Show your robot building and coding skills.</p>
+            <p><b>Coordinator:</b> Rahul</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500" alt="Coding">
+            <h3>Coding Challenge</h3>
+            <p>Test your programming and problem-solving skills.</p>
+            <p><b>Coordinator:</b> Kiran</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500" alt="Gaming">
+            <h3>Gaming</h3>
+            <p>Participate in exciting gaming competitions.</p>
+            <p><b>Coordinator:</b> Sai</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="cultural">
+    <h2>Cultural Events</h2>
+
+    <div class="events">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=500" alt="Dance">
+            <h3>Dance Competition</h3>
+            <p>Show your dance talent on stage.</p>
+            <p><b>Coordinator:</b> Priya</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=500" alt="Singing">
+            <h3>Singing</h3>
+            <p>Sing your favorite songs and entertain everyone.</p>
+            <p><b>Coordinator:</b> Anjali</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=500" alt="DJ">
+            <h3>DJ Night</h3>
+            <p>Enjoy music and celebrate with friends.</p>
+            <p><b>Coordinator:</b> Naveen</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="workshops">
+    <h2>Workshops</h2>
+
+    <div class="events">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500" alt="AI">
+            <h3>Artificial Intelligence</h3>
+            <p>Learn basic AI concepts and applications.</p>
+            <p><b>Coordinator:</b> Arjun</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500" alt="Web Development">
+            <h3>Web Development</h3>
+            <p>Learn HTML and CSS website development.</p>
+            <p><b>Coordinator:</b> Teja</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="schedule">
+    <h2>Event Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Time</th>
+            <th>Venue</th>
+        </tr>
+
+        <tr>
+            <td>Dec 24</td>
+            <td>Inauguration</td>
+            <td>9:00 AM</td>
+            <td>Main Auditorium</td>
+        </tr>
+
+        <tr>
+            <td>Dec 25</td>
+            <td>Technical Events</td>
+            <td>10:00 AM</td>
+            <td>Computer Labs</td>
+        </tr>
+
+        <tr>
+            <td>Dec 26</td>
+            <td>Cultural Events</td>
+            <td>2:00 PM</td>
+            <td>Main Stage</td>
+        </tr>
+
+        <tr>
+            <td>Dec 27</td>
+            <td>Prize Distribution</td>
+            <td>5:00 PM</td>
+            <td>Main Auditorium</td>
+        </tr>
+    </table>
+</section>
+
+<section id="rules">
+    <h2>Rules and Regulations</h2>
+
+    <div class="rules">
+        <ol>
+            <li>All students must carry their college ID cards.</li>
+            <li>Participants must register before the event.</li>
+            <li>Follow the instructions of event coordinators.</li>
+            <li>Maintain discipline during all competitions.</li>
+            <li>Report to the venue before the event starts.</li>
+            <li>Judges' decisions are final.</li>
+        </ol>
+    </div>
+</section>
+
+<section id="register">
+    <h2>Festival Registration</h2>
+
+    <div class="form-box">
+
+        <form action="#" method="post">
+
+            <label>Student Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+            <label>College Name:</label>
+            <input type="text" name="college" placeholder="Enter college name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" placeholder="Enter phone number" required>
+
+            <label>Select Event:</label>
+            <select name="event">
+                <option>Robotics</option>
+                <option>Coding Challenge</option>
+                <option>Gaming</option>
+                <option>Dance</option>
+                <option>Singing</option>
+                <option>AI Workshop</option>
+                <option>Web Development Workshop</option>
+            </select>
+
+            <label>Participation Type:</label>
+            <select name="type">
+                <option>Individual</option>
+                <option>Team</option>
+            </select>
+
+            <label>Message:</label>
+            <textarea name="message" rows="4" placeholder="Enter your message"></textarea>
+
+            <input type="submit" value="Register Now">
+
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    <p>ZENITH 2026 - College Annual Festival</p>
+    <p>Organized by Students and Faculty</p>
+    <p>Contact: fest@college.edu</p>
+</footer>
+
+</body>
+</html>
